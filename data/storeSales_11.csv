@@ -1,0 +1,9 @@
+store_id,product,revenue,year
+1,Product1,100,2022
+1,Product2,200,2022
+2,Product1,150,2022
+2,Product2,250,2022
+3,Product1,300,2022
+3,Product2,400,2022
+4,Product1,200,2022
+4,Product2,150,2022

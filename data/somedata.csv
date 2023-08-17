@@ -1,0 +1,5 @@
+id,name,value
+1,Some("foo"),2.0
+2,None,3.0
+3,Some("bar"),null
+4,None,null
