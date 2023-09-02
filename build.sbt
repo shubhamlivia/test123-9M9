@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-hive" % sparkVersion
 )
 
-libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.14.1"
+libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.17.1"
 
 
 unmanagedResourceDirectories in Compile += baseDirectory.value / "src" / "main" / "resources"

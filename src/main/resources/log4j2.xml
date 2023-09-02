@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <!-- Define your appenders here -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Suppress INFO logs from Spark components -->
+        <Logger name="org.apache.spark" level="ERROR" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <!-- Suppress INFO logs from Spark SQL components -->
+        <Logger name="org.apache.spark.sql" level="ERROR" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <!-- Suppress INFO logs from other Spark components or loggers -->
+        <!-- Add more <Logger> elements as needed -->
+        <!-- ... -->
+        <Root level="ERROR">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
